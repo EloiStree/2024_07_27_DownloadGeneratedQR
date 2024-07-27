@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Networking;
 
 public class ApiQrServerComMono : MonoBehaviour
@@ -14,6 +15,7 @@ public class ApiQrServerComMono : MonoBehaviour
     public string m_lastCalledUrl;
     public Texture2D m_lastDownloadedQR;
 
+    public UnityEvent<Texture2D> m_onDownloadedQR;
 
     [ContextMenu("Generate QR")]
     public void GenerateFromInspectorQR()
@@ -40,9 +42,9 @@ public class ApiQrServerComMono : MonoBehaviour
             }
             else
             {
-                // Get the downloaded texture
                 m_lastDownloadedQR = ((DownloadHandlerTexture)request.downloadHandler).texture;
             }
+            m_onDownloadedQR.Invoke(m_lastDownloadedQR);
         }
     }
 }
