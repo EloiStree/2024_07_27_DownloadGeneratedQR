@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.eloistree.generateqrfromurl",                              
+  "displayName": "Download Generated QR code from URL",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "Allows to generate QR code from URL",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2024_07_27_DownloadGeneratedQR.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 
