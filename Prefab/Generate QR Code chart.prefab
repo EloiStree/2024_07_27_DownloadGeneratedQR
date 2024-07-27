@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7196376151829440596
+--- !u!1 &8874587228129008856
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6061398214041551004}
-  - component: {fileID: 623101842153622234}
+  - component: {fileID: 3348398116344417436}
+  - component: {fileID: 2210808625044500074}
   m_Layer: 0
-  m_Name: Generate QR Code
+  m_Name: Generate QR Code chart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6061398214041551004
+--- !u!4 &3348398116344417436
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7196376151829440596}
+  m_GameObject: {fileID: 8874587228129008856}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 113.400024, y: 941.8, z: 0}
@@ -32,21 +32,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &623101842153622234
+--- !u!114 &2210808625044500074
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7196376151829440596}
+  m_GameObject: {fileID: 8874587228129008856}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34c540ce8c04df14bb6b39de6d2ac181, type: 3}
+  m_Script: {fileID: 11500000, guid: f6c93136cc9d83845b384e03994af130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_size: 256
   m_textProvideToUrl: Hello World
-  m_serverUri: https://api.qrserver.com/v1/create-qr-code/?size={1}x{1}&data={0}
-  m_lastCalledUrl: https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=Hello
-    World
+  m_serverUri: https://quickchart.io/qr?size={1}x{1}&data={0}
+  m_lastCalledUrl: 
   m_lastDownloadedQR: {fileID: 0}
+  m_onDownloadedQR:
+    m_PersistentCalls:
+      m_Calls: []
