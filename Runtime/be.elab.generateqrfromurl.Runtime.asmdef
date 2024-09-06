@@ -1,12 +1,10 @@
 
 {                                                                   
-            "name": "be.eloistree.generateqrfromurlEditor",          
-    "references": ["be.eloistree.generateqrfromurl"
+            "name": "be.elab.generateqrfromurl",          
+    "references": [
 ],                                                              
     "optionalUnityReferences": [],                                  
-    "includePlatforms": [                                           
-        "Editor"                                                    
-    ],                                                              
+    "includePlatforms": [],                                                  
     "excludePlatforms": [],                                         
     "allowUnsafeCode": false,                                       
     "overrideReferences": false,                                    
